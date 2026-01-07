@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: #050505;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: radial-gradient(circle at top, #0f0f0f, #050505);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    margin: 15px 0 30px;
+    color: #00e5ff;
+    font-weight: 300;
+}
+
+/* BUTTONS */
+.buttons a {
+    text-decoration: none;
+    color: #050505;
+    background: #00e5ff;
+    padding: 12px 28px;
+    margin: 5px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    opacity: 0.8;
+}
+
+.buttons .outline {
+    background: transparent;
+    color: #00e5ff;
+    border: 2px solid #00e5ff;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section.dark {
+    background: #0a0a0a;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+    color: #cccccc;
+}
+
+.sub {
+    margin-bottom: 40px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
+}
+
+.card h3 {
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+/* RARITY */
+.rarity {
+    list-style: none;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.rarity li {
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+}
+
+.rarity span {
+    color: #00e5ff;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .section {
+        padding: 60px 8%;
+    }
+}
